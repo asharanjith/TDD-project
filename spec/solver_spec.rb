@@ -7,6 +7,11 @@ describe Solver do
       result = solver.factorial(5)
       expect(result).to eq(120)
     end
+    it 'Should return 1 for factorial of 0' do
+      solver = Solver.new
+      result = solver.factorial(0)
+      expect(result).to eq(1)
+    end
     it 'Should raise an error for negative numbers' do
       solver = Solver.new
       expect { solver.factorial(-1) }.to raise_error(ArgumentError)
