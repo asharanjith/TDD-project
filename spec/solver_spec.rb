@@ -19,4 +19,21 @@ describe Solver do
     expect(reversed.reverse('hello')).to eq('olleh')
     end
   end
+
+  context 'return a string based on the given argument'
+   it 'Sould return fizz when n divided by 3'
+   num = Solver.new
+   expect(num.fizzbuzz(9)).to eq("fizz")
+
+   it 'Sould return buzz when n divided by 5'
+   num = Solver.new
+   expect(num.fizzbuzz(5)).to eq("buzz")
+
+   it 'Sould return fizzbuzz when n divided by 3 and 5'
+   num = Solver.new
+   expect(num.fizzbuzz(15)).to eq("fizzbuzz")
+
+   it 'Sould return N as a string'
+   num = Solver.new
+   expect(num.fizzbuzz(7)).to eq("7")
 end
