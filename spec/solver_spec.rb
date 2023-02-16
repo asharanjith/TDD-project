@@ -16,7 +16,7 @@ describe Solver do
   context 'return a reversed word' do
     it 'Should return olleh for hello' do
     reversed = Solver.new
-    expect ( reversed.reverse('hello')).to eq('olleh')
+    expect(reversed.reverse('hello')).to eq('olleh')
     end
   end
 end
